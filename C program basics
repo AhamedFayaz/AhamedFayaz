@@ -1,0 +1,6 @@
+// First C program just print the hello world.
+#include <stdio.h>
+int main() {
+    printf("Hello world \n :) \n");
+    return 0;
+}
