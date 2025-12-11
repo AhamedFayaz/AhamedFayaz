@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdint.h>
+#define SET_BIT(value,position)      (value | (1<<position))
+#define CLEAR_BIT(value,position)    (value & ~(1<<position))
+#define TOGGLE_BIT(value,position)   (value ^ (1<<position))
+int main() {
+    // Write C code here
+   uint32_t input = 0x00;
+  printf("val:%d\n", SET_BIT(input,2));
+  printf("val:%d\n", CLEAR_BIT(input,2));
+  printf("val:%d\n", TOGGLE_BIT(input,2));
+    return 0;
+}
