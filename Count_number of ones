@@ -1,0 +1,15 @@
+//count number of ones
+#include <stdio.h>
+#include <stdint.h>
+int main() {
+    // Write C code here
+   uint32_t i = 0xFFFFFFFF, count = 0;
+   for(int index = 0; index < (sizeof(i) *8); index++)
+   {
+       if((i>>index) &1){
+           count++;
+       }
+   }
+   printf("count:%d\n",count);
+    return 0;
+}
